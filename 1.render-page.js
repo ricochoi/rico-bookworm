@@ -87,7 +87,7 @@ exports.modules = {
 	    }, _infoBox["@media (min-width: " + theme.mediaQueryTresholds.L + "px)"] = {
 	      display: "block",
 	      color: theme.info.colors.text,
-	      background: theme.info.colors.background,
+	      // background: theme.info.colors.background,
 	      position: "absolute",
 	      left: 0,
 	      top: 0,
@@ -424,23 +424,6 @@ exports.modules = {
 	  return _react2.default.createElement(
 	    "nav",
 	    { className: classes.infoMenu },
-	    pages.map(function (page, i) {
-	      var _page$node = page.node,
-	          fields = _page$node.fields,
-	          frontmatter = _page$node.frontmatter;
-	
-	      return _react2.default.createElement(
-	        _gatsbyLink2.default,
-	        {
-	          key: fields.slug,
-	          to: fields.slug,
-	          onClick: linkOnClick,
-	          className: classes.link,
-	          "data-shape": "closed"
-	        },
-	        frontmatter.menuTitle ? frontmatter.menuTitle : frontmatter.title
-	      );
-	    }),
 	    _react2.default.createElement(
 	      _gatsbyLink2.default,
 	      { to: "/contact/", onClick: linkOnClick, className: classes.link, "data-shape": "closed" },
@@ -535,7 +518,7 @@ exports.modules = {
 	    avatar: (_avatar = {
 	      width: "36px",
 	      height: "36px",
-	      borderRadius: "65% 75%",
+	      borderRadius: "50% 50%",
 	      border: "1px solid #ddd",
 	      transition: "all .3s",
 	      transitionTimingFunction: "ease",
@@ -552,7 +535,7 @@ exports.modules = {
 	      height: "60px"
 	    }, _avatar["@media (hover: hover)"] = {
 	      "&:hover": {
-	        borderRadius: "75% 65%"
+	        transform: "scale(1.2)"
 	      }
 	    }, _avatar),
 	    title: (_title = {
@@ -700,7 +683,7 @@ exports.modules = {
 	      lineHeight: 1.5,
 	      fontSize: ".95em",
 	      textAlign: "left",
-	      marginBottom: ".8em",
+	      marginBottom: "22em",
 	      "& p:first-child": {
 	        marginTop: 0
 	      },
@@ -833,16 +816,22 @@ exports.modules = {
 	  var classes = props.classes;
 	
 	
-	  var items = [{ name: "gatsby", url: "https://www.gatsbyjs.org/", comp: _gatsby2.default }, { name: "react", url: "https://reactjs.org/", comp: _react4.default }, { name: "graphql", url: "http://graphql.org/", comp: _graphql2.default }, { name: "jss", url: "http://cssinjs.org/", comp: _jss2.default }, { name: "material-ui", url: "https://material-ui-next.com/", comp: _materialUi2.default }, { name: "redux", url: "https://redux.js.org/", comp: _redux2.default }, { name: "algolia", url: "https://www.algolia.com/", comp: _algolia2.default }, { name: "webpack", url: "https://webpack.js.org/", comp: _webpack2.default }, { name: "babel", url: "https://babeljs.io/", comp: _babel2.default }, { name: "netlify", url: "https://www.netlify.com/", comp: _netlify2.default }];
+	  var items = [
+	    // { name: "gatsby", url: "https://www.gatsbyjs.org/", comp: GatsbyIcon },
+	    // { name: "react", url: "https://reactjs.org/", comp: ReactIcon },
+	    // { name: "graphql", url: "http://graphql.org/", comp: GraphqlIcon },
+	    // { name: "jss", url: "http://cssinjs.org/", comp: JssIcon },
+	    // { name: "material-ui", url: "https://material-ui-next.com/", comp: MaterialUiIcon },
+	    // { name: "redux", url: "https://redux.js.org/", comp: ReduxIcon },
+	    // { name: "algolia", url: "https://www.algolia.com/", comp: AlgoliaIcon },
+	    // { name: "webpack", url: "https://webpack.js.org/", comp: WebpackIcon },
+	    // { name: "babel", url: "https://babeljs.io/", comp: BabelIcon },
+	    // { name: "netlify", url: "https://www.netlify.com/", comp: NetlifyIcon }
+	  ];
 	
 	  return _react2.default.createElement(
 	    "div",
 	    { className: classes.stack },
-	    _react2.default.createElement(
-	      "h5",
-	      { className: classes.header },
-	      "built with:"
-	    ),
 	    _react2.default.createElement(
 	      "div",
 	      { className: classes.box },
