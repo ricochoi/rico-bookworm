@@ -29,7 +29,9 @@ const styles = theme => ({
       "&:hover": {
         color: theme.navigator.colors.postsListItemLinkHover,
         "& .pointer": {
-          borderRadius: "65% 75%"
+          marginLeft: "-15px",
+          position: "relative",
+          transition: "all .2s ease-out"
         }
       }
     }
@@ -38,14 +40,14 @@ const styles = theme => ({
     position: "relative",
     flexShrink: 0,
     overflow: "hidden",
-    borderRadius: "75% 65%",
+    borderRadius: "4px",
     width: "60px",
     height: "60px",
     margin: "0",
     transition: "all .5s",
     "& img": {
       width: "100%",
-      height: "100%"
+      //height: "100%"
     },
     [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
       marginRight: ".5em",

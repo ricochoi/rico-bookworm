@@ -9,7 +9,7 @@ const styles = theme => ({
     lineHeight: 1.5,
     fontSize: ".95em",
     textAlign: "left",
-    marginBottom: ".8em",
+    marginBottom: "22em",
     "& p:first-child": {
       marginTop: 0
     },

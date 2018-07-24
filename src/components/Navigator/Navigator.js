@@ -12,7 +12,7 @@ const styles = theme => ({
   navigator: {
     transform: "translate3d(0, 0, 0)",
     willChange: "left, top, bottom, width",
-    background: theme.navigator.colors.background,
+    // background: theme.navigator.colors.background,
     position: "absolute",
     top: 0,
     left: 0,

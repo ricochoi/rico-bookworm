@@ -11,6 +11,9 @@ const styles = theme => ({
     bottom: 0,
     right: 0,
     overflow: "hidden",
+    background: `url(/rico.png) no-repeat`,
+    backgroundSize: "cover",
+    backgroundPosition: "right",
     "@media print": {
       position: "relative",
       overflow: "visible"
